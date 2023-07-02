@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Navbar</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a class="active" href="#navbar">Navbar</a></li>
+                <li class="nav-item"><a href="#home">Home</a></li>
+                <li class="nav-item"><a href="#link">Link</a></li>
+                <li class="nav-item">
+                    <a href="#">Dropdown
+                        <div class="dropdown">
+                            <button class="dropbtn">Dropdown</button>
+                            <div class="dropdown-content">
+                                <a href="#">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="search fa-bars">
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </li>
+
+                <li class="search nav-item"><button>Search</button></li>
+                <li class="search nav-item"><input type="text" class="searchText" placeholder="Search"></li>
+            </ul>
+        </nav>
+
+        <div class="mobile-container" id="myLinksContainer">
+            <div class="topnav">
+              <div id="myLinks">
+                <a class="nav-item-link" href="#home">Home</a>
+              </div>
+              <div id="myLinks">
+                <a class="nav-item-link" href="#link">Link</a>
+              </div>
+              <div id="myLinks">
+                <a class="nav-item-link" href="#">Dropdown
+                    <div class="dropdown">
+                        <button class="dropbtn">Dropdown</button>
+                        <div class="dropdown-content">
+                            <a href="#">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                        </div>
+                    </div>
+                </a>
+              </div>
+            </div>
+        </div>
+
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myLinksContainer");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+        </script>
+            
+    </body>
+</html>
